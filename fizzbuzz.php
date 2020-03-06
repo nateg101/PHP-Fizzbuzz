@@ -15,4 +15,11 @@
         return true;
       }
     }
+
+    public function output($number)
+    {
+      if ($this->divisibleBy3($number)) {
+        return "Fizz";
+      }
+    }
   }
