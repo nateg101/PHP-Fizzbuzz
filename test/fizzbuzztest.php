@@ -6,27 +6,35 @@
 
   class FizzbuzzTest extends TestCase
   {
+    protected $fizzbuzz;
+
+    protected function setUp(): void
+    {
+        $this->fizzbuzz = new Fizzbuzz();
+    }
+
     public function testIsDivisibleBy3()
     {
-      $fizz = New Fizzbuzz;
-      $this->assertEquals($fizz->divisibleBy3(12), true);
+      $this->assertEquals($this->fizzbuzz->divisibleBy3(12), true);
     }
 
     public function testIsNotDivisibleBy3()
     {
-      $fizz = New Fizzbuzz;
-      $this->assertNotEquals($fizz->divisibleBy3(7), true);
+      $this->assertNotEquals($this->fizzbuzz->divisibleBy3(7), true);
     }
 
     public function testIsDivisibleBy5()
     {
-      $fizz = New Fizzbuzz;
-      $this->assertEquals($fizz->divisibleBy5(20), true);
+      $this->assertEquals($this->fizzbuzz->divisibleBy5(20), true);
     }
 
     public function testIsNotDivisibleBy5()
     {
-      $fizz = New Fizzbuzz;
-      $this->assertNotEquals($fizz->divisibleBy5(12), true);
+      $this->assertNotEquals($this->fizzbuzz->divisibleBy5(12), true);
+    }
+
+    public function testFizzBuzzOutput()
+    {
+      $this->assertEquals($this->fizzbuzz->output(6), true);
     }
   }
