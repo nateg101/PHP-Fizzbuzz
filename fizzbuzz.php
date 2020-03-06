@@ -24,6 +24,8 @@
         return "Fizz";
       } else if ($this->divisibleBy5($number)) {
         return "Buzz";
+      } else {
+        return $number;
       }
     }
   }
