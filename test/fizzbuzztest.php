@@ -23,4 +23,10 @@
       $fizz = New Fizzbuzz;
       $this->assertEquals($fizz->divisibleBy5(20), true);
     }
+
+    public function testIsNotDivisibleBy5()
+    {
+      $fizz = New Fizzbuzz;
+      $this->assertNotEquals($fizz->divisibleBy5(12), true);
+    }
   }

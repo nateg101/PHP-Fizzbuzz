@@ -8,4 +8,11 @@
         return true;
       }
     }
+
+    public function divisibleBy5($number)
+    {
+      if ($number % 5 === 0) {
+        return true;
+      }
+    }
   }
