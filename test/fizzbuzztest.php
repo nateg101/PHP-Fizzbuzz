@@ -38,5 +38,6 @@
       $this->assertEquals($this->fizzbuzz->output(6), "Fizz");
       $this->assertEquals($this->fizzbuzz->output(10), "Buzz");
       $this->assertEquals($this->fizzbuzz->output(15), "FizzBuzz");
+      $this->assertEquals($this->fizzbuzz->output(4), 4);
     }
   }
