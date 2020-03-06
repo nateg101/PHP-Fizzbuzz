@@ -18,7 +18,9 @@
 
     public function output($number)
     {
-      if ($this->divisibleBy3($number)) {
+      if ($this->divisibleBy3($number) && $this->divisibleBy5($number)) {
+        return "FizzBuzz";
+      } else if ($this->divisibleBy3($number)) {
         return "Fizz";
       } else if ($this->divisibleBy5($number)) {
         return "Buzz";
