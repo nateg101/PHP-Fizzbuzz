@@ -36,5 +36,6 @@
     public function testFizzBuzzOutput()
     {
       $this->assertEquals($this->fizzbuzz->output(6), "Fizz");
+      $this->assertEquals($this->fizzbuzz->output(10), "Buzz");
     }
   }

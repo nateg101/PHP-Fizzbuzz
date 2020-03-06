@@ -20,6 +20,8 @@
     {
       if ($this->divisibleBy3($number)) {
         return "Fizz";
+      } else if ($this->divisibleBy5($number)) {
+        return "Buzz";
       }
     }
   }
